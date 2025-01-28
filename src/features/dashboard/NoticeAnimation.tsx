@@ -10,14 +10,13 @@ const NoticeAnimation: FC<{ noticePostion: any, children: React.ReactElement }>
     = ({ noticePostion, children }) => {
         return (
             <View style={styles.container}>
-                <RNAnimated.View style={[styles.noticeConatiner, { transform: [{ translateY: noticePostion }] }]}>
-                    
+                <RNAnimated.View style={[styles.noticeConatiner, { transform: [{ translateY: noticePostion }] }]}>        
                 <Notice/>
                 </RNAnimated.View>
                 <RNAnimated.View style={[styles.contentContainer, {
                     paddingTop: noticePostion.interpolate({
                         inputRange: [NOTICE_HEIGHT, 0],
-                        outputRange:[0,NOTICE_HEIGHT+20]
+                        outputRange:[0,NoticeHeight+20]
                     })
                 }]}    >
                     {children}
@@ -39,7 +38,7 @@ const styles = StyleSheet.create({
     },
     container: {
         flex: 1,
-        color: 'white',
+        color: '#fff',
     }
 
 

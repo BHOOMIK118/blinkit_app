@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Platform, Touchable, TouchableOpacity } from 'react-native'
+import { View, Text, StyleSheet, Platform, TouchableOpacity } from 'react-native'
 import React, { FC } from 'react'
 import CustomText from '@components/ui/CustomText'
 import { Fonts } from '@utils/Constants'
@@ -7,9 +7,11 @@ import { useAuthStore } from '@state/authStore'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 
 
-const { setUser, user } = useAuthStore();
 
 const Header: FC<{ showNotice: () => void }> = ({ showNotice }) => {
+
+    const { setUser, user } = useAuthStore();
+
     return (
         <View style={styles.subConatiner}>
             <TouchableOpacity activeOpacity={0.8} >
@@ -29,13 +31,13 @@ const Header: FC<{ showNotice: () => void }> = ({ showNotice }) => {
                 </View>
                 <View style={styles.flexRow}>
                     <CustomText fontFamily={Fonts.Medium} variant='h8' numberOfLines={1} style={styles.text2}>
-                        {user?.address || 'knowwhere,Somewhere😅'}
+                        {user?.address || 'knowwhere,Somewhere 😅'}
                     </CustomText>
                     <Icon name='menu-down' size={RFValue(20)} color='#fff' style={{ bottom: -1 }} />
                 </View>
             </TouchableOpacity>
             <TouchableOpacity>
-                <Icon name='account-circle-outLine' size={RFValue(36)} color='#666' />
+                <Icon name='account-circle-outline' size={RFValue(36)} color='#fff' />
             </TouchableOpacity>
         </View>
     )

@@ -113,43 +113,43 @@ const productsList =
 
 export const categories = [
     {
-        id: 1,
+        id: 3,
         name: "Milk, Curd & Paneer",
         image: require('../assets/category/1.png'),
         products: productsList
     },
     {
-        id: 2,
+        id: 4,
         name: "Pharma & Wellness",
         image: require('../assets/category/2.png')
     },
     {
-        id: 3,
+        id: 7,
         name: "Vegetables & Fruits",
         image: require('../assets/category/3.png')
     },
     {
-        id: 4,
+        id: 6,
         name: "Munchies",
         image: require('../assets/category/4.png')
     },
     {
-        id: 5,
+        id: 8,
         name: "Home & Office",
         image: require('../assets/category/5.png')
     },
     {
-        id: 6,
+        id: 5,
         name: "Baby Care",
         image: require('../assets/category/6.png')
     },
     {
-        id: 7,
+        id: 1,
         name: "Ata, Rice & Dal",
         image: require('../assets/category/7.png')
     },
     {
-        id: 8,
+        id: 2,
         name: "Cleaning Essentials",
         image: require('../assets/category/8.png')
     },
