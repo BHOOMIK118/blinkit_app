@@ -4,7 +4,7 @@
 
 ![Raining_Notification](Images/Raining_Notification.png)
 
-![Product_Dashboard](Images/Product_Dashboard.png)
+![Product_Dashboard](Images/Product_DashBoard.png)
 
 ![Search_Bar](Images/Search_Bar.png)
 
