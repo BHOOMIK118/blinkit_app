@@ -1,18 +1,18 @@
-![SplashScreen](images/SplashScreen.png)
+![SplashScreen](Images/SplashScreen.png)
 
-![Customer_Login](images/Customer_Login.png)
+![Customer_Login](Images/Customer_Login.png)
 
-![Raining_Notification](images/Raining_Notification.png)
+![Raining_Notification](Images/Raining_Notification.png)
 
-![Product_Dashboard](images/Product_Dashboard.png)
+![Product_Dashboard](Images/Product_Dashboard.png)
 
-![Search_Bar](images/Search_Bar.png)
+![Search_Bar](Images/Search_Bar.png)
 
-![Product_Categories](images/Product_Categories.png)
+![Product_Categories](Images/Product_Categories.png)
 
-![Product_Categories2](images/Product_Categories2.png)
+![Product_Categories2](Images/Product_Categories2.png)
 
-![Footer](images/Footer.png)
+![Footer](Images/Footer.png)
 
 
 
