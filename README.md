@@ -1,3 +1,24 @@
+![SplashScreen](images/SplashScreen.png)
+
+![Customer_Login](images/Customer_Login.png)
+
+![Raining_Notification](images/Raining_Notification.png)
+
+![Product_Dashboard](images/Product_Dashboard.png)
+
+![Search_Bar](images/Search_Bar.png)
+
+![Product_Categories](images/Product_Categories.png)
+
+![Product_Categories2](images/Product_Categories2.png)
+
+![Footer](images/Footer.png)
+
+
+
+
+
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
