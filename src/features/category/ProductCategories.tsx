@@ -1,10 +1,11 @@
 import { View, Text, StyleSheet, ActivityIndicator } from 'react-native'
 import React, { FC, useEffect, useState } from 'react'
 import CustomHeader from '@components/ui/CustomHeader'
-import { Colors } from '@utils/Constants'
+import { Colors } from '@utils/Constants' 
 import SideBar from './SideBar'
-import { getAllCategories, getProductsByCategoryId } from '@service/ProductService'
+import { getAllCategories, getProductsByCategoryId } from '@service/productService'
 import ProductList from './ProductList'
+
 
 const ProductCategories: FC = () => {
 
@@ -24,7 +25,7 @@ const ProductCategories: FC = () => {
                 setSelecteCategory(data[0])
             }
         } catch (error) {
-            console.log("Error fetching Categories",error);
+            console.log('Error fetching Categories',error);
         }
         finally {
             setCategoriesLoading(false)
@@ -38,6 +39,7 @@ const ProductCategories: FC = () => {
         try {
             setProductsLoading(true)
             const data = await getProductsByCategoryId(categoryId);
+          
             setProducts(data)
             
         } catch (error) {
@@ -52,21 +54,22 @@ const ProductCategories: FC = () => {
         if (selectedCategory?._id) {
             fetchProducts(selectedCategory?._id)
         }
+        console.log(fetchProducts(selectedCategory?._id));
+        
     },[selectedCategory])
 
     return (
         <View style={styles.mainContainer}>
             <CustomHeader title={selectedCategory?.name || 'Categories'} search />
             <View style={styles.subContainer}>
-                {categoriesLoading ? (<ActivityIndicator size='small' color={Colors.border} />) :
+                {categoriesLoading ? (<ActivityIndicator size='small' color='#d0d4dc' />) :
                 
-                    (
-                        <SideBar
+                    (  <SideBar
                             categories={categories}
                             selectedCategory={selectedCategory}
                             OnCategoryPress={(category:any)=>setSelecteCategory(category)}
                         />
-                )
+                     )
                 }
                 {productsLoading ? (<ActivityIndicator size='large' color={Colors.border} style={styles.center} />) :
                     (<ProductList data ={products || []}/>) 

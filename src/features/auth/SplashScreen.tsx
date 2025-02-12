@@ -65,8 +65,8 @@ const SplashScreen: FC = () => {
             }
             return true;
         }
-        resetAndNavigate('CustomerLogin')
-        return false
+        // resetAndNavigate('CustomerLogin')
+        // return false
     }
 
     useEffect(() => {
